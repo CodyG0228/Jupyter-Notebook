@@ -18,7 +18,7 @@ if __name__ == "__main__":
     for i in range(3):
         p = multiprocessing.Process(target=worker, name=f"Process-{i+1}")
         processes.append(p)
-        p.start() # This actually starts the process
+        p.start()
         
     for p in processes:
         p.join()
