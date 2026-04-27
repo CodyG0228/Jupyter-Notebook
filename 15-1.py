@@ -11,7 +11,7 @@ def worker():
     current_time = datetime.now().strftime("%H:%M:%S.%f")
     
     process_name = multiprocessing.current_process().name
-    print(f"{process_name} woke up and exited at: {current_time} (slept for {sleep_time:.2f}s)")
+    print(f"{process_name} Woke Up then Exited: {current_time} (Time Slept: {sleep_time:.2f}s)")
 
 if __name__ == "__main__":
     processes = []
